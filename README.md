@@ -6,4 +6,4 @@ View it (and use it!) online at [http://quicklist.higabba.biz](http://quicklist.
 
 <br>
 
-&copy; 2015 Johanna Bodnyk
+&copy; 2015 Johanna Bodnyk, all rights reserved.
