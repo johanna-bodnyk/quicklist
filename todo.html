@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quicklist</title>
+    <link href='http://fonts.googleapis.com/css?family=Kalam:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.4.custom.min.css">   
+    <link rel="stylesheet" type="text/css" href="css/todo.css">
+</head>
+<body>
+    <h1 id="title">Quicklist</h1>
+    <input id="title-input" type="text" value="Quicklist">
+
+    <ul id='tasklist'>
+        <li id='another'>
+            Add another...
+        </li>
+    </ul>
+
+    <div id="undo-wrapper">
+        Task deleted. <a href="#" id="undo-link">Undo?</a>
+    </div>
+
+    <div id="buttons">
+        <button class="action" id="highlight" title="[h]ighlight"></button>
+        <button class="action" id="complete" title="mark as [c]ompleted"></button>
+        <button class="action" id="delete" title="[d]elete tasks"></button>
+        <button id="autosort" title="auto-[s]ort by priority"></button> 
+        <button id="undo" title="undo [z]" disabled></button>
+        <button id="help" title="[h]elp"></button>
+    </div>
+
+    <ul id="help-text">
+        <li>Doubleclick to edit or add a task.</li>
+        <li>Type <strong>a</strong> to add a new task.</li> 
+        <li>Drag and drop to sort.</li>
+        <li>Type <strong>s</strong> or click <img width="20px" src="images/autosort.png"> to auto-sort by priority.</li>        
+        <li>Type <strong>h</strong> or click <img width="20px" src="images/highlight.png">, then click a task to highlight it.</li>
+        <li>Type <strong>c</strong> or click <img width="20px" src="images/complete.png">, then click a task to mark it as complete.</li>
+        <li>Type <strong>d</strong> or click <img width="16px" src="images/delete.png">, then click a task to delete it.</li>
+        <li>Type <strong>z</strong> or click <img width="20px" src="images/undo.png"> to undo the last change.</li>
+        <li>Type <strong>?</strong> or click <img width="20px" src="images/help.png"> to show or hide this help.</li> 
+        <li>Doubleclick "Quicklist" to rename your to-do list.</li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>   
+    <script type="text/javascript" src="js/todo.js"></script>   
+</body>
+</html>

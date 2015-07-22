@@ -1,0 +1,153 @@
+body {
+    font-size: 30px;
+    font-family: 'Kalam', cursive;
+    width: 60%;
+    margin: 20px auto 0;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#title-input {
+    display: none;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+ul#tasklist {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+
+.task, input {
+    font-size: 1em;
+    font-family: 'Kalam', cursive;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#another, #prompt {
+    color: #aaa;
+}
+
+#prompt {
+    display: none;
+}
+
+.tags {
+    font-size: .75em;
+    display: inline-block;
+}
+
+.sans {
+    font-family: 'Lato', sans-serif;
+}
+
+
+.highlighted .description {
+    background-color: #FFFF53;
+}
+
+.completed .description {
+    text-decoration: line-through;
+}
+
+#buttons {
+    margin-bottom: 10px;
+}
+
+button {
+    height: 30px;
+    width: 40px;
+    background: none;
+    border-radius: 5px;
+    border-width: 3px;
+    padding: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button:disabled {
+    background-color: #ccc;
+    border-style: solid;
+}
+
+button.on {
+    background-color: #ccc;
+    border-style: inset;
+}
+
+button#highlight {
+    background-image: url('../images/highlight.png');
+}
+
+button#highlight:disabled {
+    background-image: url('../images/highlight-disabled.png');
+}
+
+button#complete {
+    background-image: url('../images/complete.png');
+}
+
+button#complete:disabled {
+    background-image: url('../images/complete-disabled.png');
+}
+
+button#delete {
+    background-image: url('../images/delete.png');
+}
+
+button#delete:disabled {
+    background-image: url('../images/delete-disabled.png');
+}
+
+button#undo {
+    background-image: url('../images/undo.png');
+}
+
+button#undo:disabled {
+    background-image: url('../images/undo-disabled.png');
+}
+
+button#autosort {
+    background-image: url('../images/autosort.png');
+}
+
+button#autosort:disabled {
+    background-image: url('../images/autosort-disabled.png');
+}
+
+button#help {
+    background-image: url('../images/help.png');
+}
+
+#undo-wrapper {
+    font-size: 15px;
+    display: none;
+    margin: 15px 0;
+}
+
+#undo {
+    color: black;
+}
+
+#help-toggle {
+    font-size: 25px;
+    display: inline-block;
+}
+
+ul#help-text {
+    display: none;
+    padding-left: 15px;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-top: 0px;
+}
+
+#help-text li {
+    margin-bottom: 15px;
+}
